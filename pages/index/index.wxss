@@ -1,0 +1,83 @@
+/**index.wxss**/
+
+.banners {
+    width: 100%;
+    height: 300rpx
+}
+
+.banners image {
+    width: 100%;
+    height: 100%;
+}
+
+.navContainer {
+    display: flex;
+}
+
+.navItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%
+}
+
+.iconfont {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100rpx;
+    background-color: rgb(231, 72, 72);
+    color: #fff;
+    margin: 20rpx 0;
+}
+
+.navItem text:last-child {
+    font-size: 26rpx;
+}
+
+.header .title {
+    font-size: 26rpx;
+    line-height: 80rpx;
+    color: #a99e9e;
+}
+
+.header .more {
+    font-size: 30rpx;
+    float: right;
+    border: 2rpx solid grey;
+    border-radius: 30rpx;
+    padding: 10rpx 10rpx;
+}
+
+.recommendScroll {
+    display: flex;
+}
+
+.RecommendList {
+    padding: 5rpx 20rpx;
+}
+
+.RecommendList .header {
+    padding-bottom: 30rpx;
+}
+
+.recommendScroll .scrollItem image {
+    width: 200rpx;
+    height: 200rpx;
+    margin-right: 30rpx;
+}
+
+.scrollItem text {
+    /*    需要变成块元素 才可以撑开*/
+    /*display : block;
+    !*不换行*!
+    !*white-space: nowrap;*!
+    overflow: hidden;
+    text-overflow: ellipsis;*/
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical; /* 设置对其模式为 纵向对其*/
+    -webkit-line-clamp: 2;
+}
