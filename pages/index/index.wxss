@@ -36,19 +36,6 @@
     font-size: 26rpx;
 }
 
-.header .title {
-    font-size: 26rpx;
-    line-height: 80rpx;
-    color: #a99e9e;
-}
-
-.header .more {
-    font-size: 30rpx;
-    float: right;
-    border: 2rpx solid grey;
-    border-radius: 30rpx;
-    padding: 10rpx 10rpx;
-}
 
 .recommendScroll {
     display: flex;
@@ -80,4 +67,60 @@
     text-overflow: ellipsis;
     -webkit-box-orient: vertical; /* 设置对其模式为 纵向对其*/
     -webkit-line-clamp: 2;
+}
+
+/* 热歌风向标样式*/
+.swiperMusic {
+    height: 400rpx;
+}
+
+.topList {
+    padding: 5rpx 20rpx;
+}
+.swiperItem{
+    width: 96%;
+    background-color: #fbfbfb;
+}
+.swiperItem .title {
+    font-size: 26rpx;
+    margin-bottom: 15rpx;
+}
+
+.musicItem {
+    display: flex;
+}
+
+.musicItem .count {
+    font-size: 26rpx;
+    color: #333;
+    width: 200rpx;
+    height: 100rpx;
+    text-align: center;
+    line-height: 100rpx;
+    max-width: 200rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.musicItem .musicName{
+    display:block;
+    padding-left:20rpx;
+    font-size: 26rpx;
+    color: #333;
+    /*width: 100rpx;*/
+    /*height: 100rpx;*/
+    /*text-align: center;*/
+    line-height: 100rpx;
+    max-width: 400rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.musicItem image {
+    width: 100rpx;
+    height: 100rpx;
+    text-align: center;
+    border-radius: 10rpx;
+    padding: 0rpx 5rpx 10rpx 0rpx;
 }
