@@ -63,10 +63,11 @@ Page({
         let result = await request('/login/cellphone', {phone, password}, 'GET')
         // console.log(result)
         if (result.code === 200) {
+            // 将用户信息存储至本地
+            wx.setStorageSync('userInfo', JSON.stringify(result.profile))
             wx.reLaunch({
                 url: '/pages/personal/personal',
             })
-            wx.setStorageSync('userInfo',JSON.stringify(result.profile))
         } else {
             wx.showToast({
                 title: `${result.message}`,

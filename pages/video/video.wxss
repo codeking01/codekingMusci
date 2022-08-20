@@ -1,1 +1,72 @@
 /* pages/video/video.wxss */
+.videoContainer .header {
+    display: flex;
+    padding: 5rpx;
+}
+
+.videoContainer .header .header-left image {
+    margin: 5rpx 10rpx;
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.videoContainer .header .header-right image {
+    margin: 5rpx 10rpx;
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.videoContainer .header .search {
+    margin: 0 20rpx;
+    flex: 1;
+    font-size: 28rpx;
+    color: #d43c33;
+    padding: 0 10px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* 导航栏样式 */
+.scrollNav {
+    display: flex;
+    white-space: nowrap;
+    height: 85rpx;
+}
+
+.scrollNav .NavItem {
+    padding: 5rpx 20rpx;
+    height: 70rpx;
+    text-align: center;
+    font-size: 28rpx;
+    line-height: 70rpx;
+}
+
+.NavItem .navContent {
+    height: 70rpx;
+    box-sizing: border-box;
+}
+
+.scrollNav .NavItem .active {
+    border-bottom: 1px solid #d43c33;
+}
+
+/*视频列表样式 */
+.videoScroll .videoItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    padding: 1% 3%;
+    border-bottom: 2rpx solid #ccc;
+}
+
+.videoItem video {
+    width: 100%;
+    height: 360rpx;
+}
